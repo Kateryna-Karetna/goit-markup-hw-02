@@ -1,2 +1,73 @@
 body {
+  background-color: #ffffff;
+  color: #757575;
+}
+
+.list {
+  list-style: none;
+}
+/* Хедер*/
+
+.page-header {
+  background-color: #ffffff;
+}
+
+/* Логотип */
+.logo {
+  color: #2196f3;
+}
+
+.logo-link {
+  color: #000000;
+}
+
+.logo-color {
+  color: #ffffff;
+}
+
+/* Site nav */
+.site-nav .link {
+  color: #212121;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+
+/* Auth */
+.auth .link {
+  color: #757575;
+}
+
+.auth .link:hover,
+.auth .link:focus {
+  color: #2196f3;
+}
+
+.hero {
+  background-color: #2f303a;
+}
+
+.section {
+  background-color: #ffffff;
+}
+
+/* Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
+
+/* Футер */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.adress {
+  color: #ffffff;
+}
+
+.contacts {
+  color: rgba(255, 255, 255, 0.6);
 }
