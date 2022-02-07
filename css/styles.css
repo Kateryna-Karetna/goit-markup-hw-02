@@ -35,6 +35,10 @@ body {
   color: #2196f3;
 }
 
+.current {
+  color: #2196f3;
+}
+
 /* Auth */
 .auth .link {
   color: #757575;
