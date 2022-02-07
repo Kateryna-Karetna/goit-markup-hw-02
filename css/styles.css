@@ -3,12 +3,13 @@ body {
   color: #757575;
 }
 
+/* Точки списка */
 .list {
   list-style: none;
 }
-/* Хедер*/
 
-.page-header {
+/* Хедер*/
+.header {
   background-color: #ffffff;
 }
 
@@ -17,15 +18,15 @@ body {
   color: #2196f3;
 }
 
-.logo-link {
+.logo-text {
   color: #000000;
 }
 
-.logo-color {
+.logo-el {
   color: #ffffff;
 }
 
-/* Site nav */
+/* Навигация */
 .site-nav .link {
   color: #212121;
 }
@@ -35,35 +36,39 @@ body {
   color: #2196f3;
 }
 
-.current {
-  color: #2196f3;
-}
-
-/* Auth */
-.auth .link {
+/* Контакты*/
+.contacts .link {
   color: #757575;
 }
 
-.auth .link:hover,
-.auth .link:focus {
+.contacts .link:hover,
+.contacts .link:focus {
   color: #2196f3;
 }
 
-.hero {
+/* Основной контент */
+.main {
   background-color: #2f303a;
+}
+
+.title {
+  color: #ffffff;
 }
 
 .section {
   background-color: #ffffff;
 }
 
-/* Наша команда */
-.team {
+/* Секция наша команда */
+.items {
   background-color: #f5f4fa;
 }
 
-/* Футер */
+.items .title {
+  color: #212121;
+}
 
+/* Футер */
 .footer {
   background-color: #2f303a;
 }
@@ -74,4 +79,23 @@ body {
 
 .contacts {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* Страница портфолио */
+.site-nav .current {
+  color: #2196f3;
+}
+
+.site-nav .current :hover,
+.site-nav .current:focus {
+  color: #2196f3;
+}
+
+.button {
+  color: #212121;
+}
+
+.button:hover,
+.button:focus {
+  color: #2196f3;
 }
