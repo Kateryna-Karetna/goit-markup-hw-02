@@ -1,6 +1,16 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --main-font: 'Roboto';
+  --secondary-font: 'Raleway';
+}
+
 body {
-  background-color: #ffffff;
-  color: #757575;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  /* font-family: ; */
 }
 
 /* Точки списка */
@@ -10,30 +20,30 @@ body {
 
 /* Хедер*/
 .header {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
 }
 
 /* Логотип */
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
-.logo-text {
+.logo-black {
   color: #000000;
 }
 
-.logo-el {
+.logo-white {
   color: #ffffff;
 }
 
 /* Навигация */
 .site-nav .link {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Контакты*/
@@ -43,7 +53,7 @@ body {
 
 .contacts .link:hover,
 .contacts .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Основной контент */
@@ -56,7 +66,7 @@ body {
 }
 
 .section {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
 }
 
 /* Секция наша команда */
@@ -65,7 +75,7 @@ body {
 }
 
 .items .title {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 /* Футер */
@@ -83,19 +93,35 @@ body {
 
 /* Страница портфолио */
 .site-nav .current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
-.site-nav .current :hover,
+.site-nav .current:hover,
 .site-nav .current:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
+/* button */
 .button {
-  color: #212121;
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
 }
 
-.button:hover,
-.button:focus {
-  color: #2196f3;
+.button:hover .button:focus {
+  color: var(--accent-color);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--accent-color);
 }
