@@ -3,8 +3,11 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
   --primary-font-family: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
+  --background-color: #2f303a;
+  --bgc-secondary-color: #f5f4fa;
 }
 
 body {
@@ -16,7 +19,7 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Общее - точки списка, линк */
+/* Точки списка, линки */
 .list {
   list-style: none;
 }
@@ -33,39 +36,34 @@ body {
 /* Логотип */
 .logo {
   font-family: var(--secondary-font);
-  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
-/* colors
-212121
-FFFFFF
-757575
-2196F3
-EEEEEE
-000000
-F5F4FA
-2F303A
-ECECEC
- */
-
 .logo-black {
-  color: #000000;
+  color: var(--primary-black-color);
 }
 
 .logo-white {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 /* Навигация */
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
 .nav-link {
   color: var(--title-text-color);
 }
 
-.nav-link .current {
+.current {
   color: var(--accent-color);
 }
 
@@ -75,8 +73,15 @@ ECECEC
 }
 
 /* Контакты*/
+
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
 .contacts-link {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .contacts-link:hover,
@@ -84,13 +89,13 @@ ECECEC
   color: var(--accent-color);
 }
 
-/* Основной контент */
+/* Секция герой */
+
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -100,9 +105,13 @@ ECECEC
   color: var(--primary-white-color);
 }
 
-/* button */
+/* Кнопка */
 
 .button.primary {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -112,14 +121,13 @@ ECECEC
   background-color: #188ce8;
 }
 
-/* Секция benefits */
+/* Секция преимущества */
 
 .benefits {
   background-color: var(--primary-white-color);
 }
 
 .benefits-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -129,18 +137,15 @@ ECECEC
 }
 
 .benefits-text {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
-/* Секция occupation */
+/* Секция род деятельности */
 
 .title {
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -149,14 +154,13 @@ ECECEC
   color: var(--title-text-color);
 }
 
-/* Секция наша команда */
+/* Секция команда */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--bgc-secondary-color);
 }
 
 .team-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -166,8 +170,6 @@ ECECEC
 }
 
 .team-text {
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -176,19 +178,25 @@ ECECEC
 }
 
 /* Футер */
+
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 
-.adress {
-  color: #ffffff;
+.adress-link {
+  font-size: 14px;
+  color: var(--primary-white-color);
 }
 
-.contacts {
+.contacts-footer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 /* Страница портфолио */
+
 .site-nav .current {
   color: var(--accent-color);
 }
@@ -198,27 +206,39 @@ ECECEC
   color: var(--accent-color);
 }
 
-/* button */
+/* Кнопка */
+
 .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
   color: var(--title-text-color);
-  background-color: var(--primary-white-color);
+  background-color: var(--bgc-secondary-color);
 }
 
-.button:hover .button:focus {
-  color: var(--accent-color);
-}
-
-.button.primary {
+.button:hover,
+.button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-.button.secondary {
+/* Секция портфолио */
+
+.portfolio-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
-  background-color: #f5f4fa;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
-  color: var(--accent-color);
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
