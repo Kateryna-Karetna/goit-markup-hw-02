@@ -3,19 +3,26 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --main-font: 'Roboto';
-  --secondary-font: 'Raleway';
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 }
 
 body {
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  /* font-family: ; */
 }
 
-/* Точки списка */
+/* Общее - точки списка, линк */
 .list {
   list-style: none;
+}
+
+[href] {
+  text-decoration: none;
 }
 
 /* Хедер*/
@@ -25,8 +32,25 @@ body {
 
 /* Логотип */
 .logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+/* colors
+212121
+FFFFFF
+757575
+2196F3
+EEEEEE
+000000
+F5F4FA
+2F303A
+ECECEC
+ */
 
 .logo-black {
   color: #000000;
@@ -37,45 +61,118 @@ body {
 }
 
 /* Навигация */
-.site-nav .link {
+.nav-link {
   color: var(--title-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link .current {
+  color: var(--accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 
 /* Контакты*/
-.contacts .link {
+.contacts-link {
   color: #757575;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
 /* Основной контент */
-.main {
+.hero {
   background-color: #2f303a;
 }
 
-.title {
-  color: #ffffff;
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
-.section {
+/* button */
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: #188ce8;
+}
+
+/* Секция benefits */
+
+.benefits {
   background-color: var(--primary-white-color);
 }
 
+.benefits-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.benefits-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* Секция occupation */
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
 /* Секция наша команда */
-.items {
+
+.team {
   background-color: #f5f4fa;
 }
 
-.items .title {
+.team-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.team-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 /* Футер */
