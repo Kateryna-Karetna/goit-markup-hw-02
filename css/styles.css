@@ -36,7 +36,7 @@ body {
 /* Логотип */
 .logo {
   font-family: var(--secondary-font);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -63,7 +63,7 @@ body {
   color: var(--title-text-color);
 }
 
-.current {
+.site-nav .current {
   color: var(--accent-color);
 }
 
@@ -108,7 +108,7 @@ body {
 /* Кнопка */
 
 .button.primary {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   cursor: pointer;
@@ -128,7 +128,7 @@ body {
 }
 
 .benefits-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -146,7 +146,7 @@ body {
 /* Секция род деятельности */
 
 .title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -183,6 +183,10 @@ body {
   background-color: var(--background-color);
 }
 
+.address {
+  font-style: normal;
+}
+
 .adress-link {
   font-size: 14px;
   color: var(--primary-white-color);
@@ -195,7 +199,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Страница портфолио */
+/* Cтили для страницы портфолио */
 
 .site-nav .current {
   color: var(--accent-color);
@@ -209,6 +213,7 @@ body {
 /* Кнопка */
 
 .button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -229,7 +234,7 @@ body {
 /* Секция портфолио */
 
 .portfolio-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
